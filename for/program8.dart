@@ -1,7 +1,11 @@
 void main() {
-  for (int i = 10; i>=1;i--) {
-    
-      print(i*12);
+  int product = 1;
+  int i = 10;
+ while (i >= 1) {
+    if (i % 2 != 0) {
+      product *= i; 
     }
+    i--;
   }
-
+  print("$product");
+}
